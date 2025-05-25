@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Ziyad Ahmed</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #07031f;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8em;
+      color: purple;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .service {
+      background: #12093a;
+      border-left: 6px solid purple;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      background: #1d0e54;
+    }
+
+    .service h2 {
+      color: #c97fff;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .back-btn {
+      display: block;
+      width: 100px;
+      margin: 40px auto 0;
+      padding: 10px;
+      text-align: center;
+      background: purple;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    .back-btn:hover {
+      background: rgb(179, 79, 209);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .service h2 {
+        font-size: 1.3em;
+      }
+
+      .service p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>My Services</h1>
+
+    <div class="service">
+      <h2>Frontend Web Development</h2>
+      <p>
+        I create beautiful and responsive websites using HTML, CSS, and JavaScript. I focus on clean design and smooth
+        user experience for all devices.
+      </p>
+    </div>
+
+    <div class="service">
+      <h2>Website Redesign</h2>
+      <p>
+        If your old website looks outdated or doesn’t work well on mobile, I can redesign it with a fresh and modern look.
+      </p>
+    </div>
+
+    <div class="service">
+      <h2>Bug Fixing & Code Cleanup</h2>
+      <p>
+        I help fix HTML/CSS/JS bugs and improve code structure to make your website faster and more reliable.
+      </p>
+    </div>
+
+    <div class="service">
+      <h2>Portfolio & Personal Website</h2>
+      <p>
+        I build personal portfolio websites for students, freelancers, and small businesses to help them show their work online.
+      </p>
+    </div>
+
+    <a href="index.html" class="back-btn">Back</a>
+  </div>
+</body>
+
+</html>

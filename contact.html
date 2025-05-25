@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Ziyad Ahmed</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #07031f;
+      color: white;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #12093a;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      border-left: 5px solid purple;
+    }
+
+    h1 {
+      text-align: center;
+      color: purple;
+      font-style: italic;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      background-color: #1e1450;
+      color: white;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: purple;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-style: italic;
+    }
+
+    button:hover {
+      background-color: rgb(179, 79, 209);
+    }
+
+    .thank-you {
+      display: none;
+      text-align: center;
+      font-size: 1.2em;
+      color: lightgreen;
+      margin-top: 20px;
+    }
+
+    .back-btn {
+      display: block;
+      width: 100px;
+      margin: 30px auto 0;
+      padding: 10px;
+      text-align: center;
+      background: purple;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    .back-btn:hover {
+      background: rgb(179, 79, 209);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Contact Me</h1>
+    <form id="contactForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+    <div class="thank-you" id="thankYouMessage">✅ Thank you! I’ll reply soon.</div>
+    <a href="index.html" class="back-btn">Back</a>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('thankYouMessage').style.display = 'block';
+      this.reset();
+    });
+  </script>
+</body>
+
+</html>

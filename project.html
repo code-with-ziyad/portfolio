@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Ziyad Ahmed</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #07031f;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        .projects {
+            font-style: italic;
+            color: purple;
+            font-size: 2.5em;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 15px 0;
+        }
+
+        ul a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        button {
+            margin-top: 20px;
+            font-style: italic;
+            background: purple;
+            color: white;
+            border: none;
+            width: 80px;
+            height: 35px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: rgb(179, 79, 209);
+        }
+
+        .homee {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 40px;
+        }
+
+        .left, .right {
+            flex: 1 1 45%;
+            min-width: 300px;
+        }
+
+        .left p {
+            color: white;
+            font-size: 1.1em;
+            line-height: 1.8em;
+        }
+
+        hr {
+            height: 2px;
+            background: silver;
+            margin: 20px 40px;
+            border-radius: 3px;
+        }
+
+        @media (max-width: 768px) {
+            .homee {
+                flex-direction: column;
+            }
+
+            .left, .right {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 class="projects">MY Projects</h1>
+    </center>
+
+    <hr />
+
+    <div class="homee">
+        <!-- Left Side Text -->
+        <div class="left">
+            <p>
+                <b>1. Calculator</b><br>
+                A basic web calculator that performs arithmetic operations like addition, subtraction, multiplication, and division using JavaScript.
+                <br><br>
+                <b>2. Rock Paper Scissors</b><br>
+                A simple interactive game where the user plays Rock, Paper, Scissors against the computer.
+                <br><br>
+                <b>3. Ziyad Portfolio</b><br>
+                My personal portfolio website that highlights my projects, skills, and contact info with a clean responsive layout.
+                <br><br>
+                <b>4. Charging Icon Animation</b><br>
+                A creative animation made using HTML and CSS to represent a charging icon with smooth effects.
+                <br><br>
+                <b>5. Pats Insurance Clone</b><br>
+                A front-end clone of the Pats Insurance website, focused on layout and UI design using HTML and CSS.
+                <br><br>
+                <b>6. Visit GitHub Profile for More</b><br>
+                You can explore many more projects on my GitHub profile.
+            </p>
+        </div>
+
+        <!-- Right Side Links -->
+        <div class="right">
+            <ul>
+                <li><a href="https://github.com/code-with-ziyad/Modern-calculator" target="_blank">🔗 Calculator</a></li>
+                <li><a href="https://github.com/code-with-ziyad/rockpaperscisor" target="_blank">🔗 Rock Paper Scissors</a></li>
+                <li><a href="https://github.com/code-with-ziyad/my-website" target="_blank">🔗 Ziyad Portfolio</a></li>
+                <li><a href="https://github.com/code-with-ziyad/animation-charging" target="_blank">🔗 Charging Icon Animation</a></li>
+                <li><a href="https://github.com/code-with-ziyad/PET-INSURANCE-" target="_blank">🔗 Pats Insurance Clone</a></li>
+                <li><a href="https://github.com/code-with-ziyad" target="_blank">🔗 Visit GitHub Profile</a></li>
+            </ul>
+            <a href="index.html"><button>Back</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
